@@ -1,0 +1,19 @@
+body {
+	background-color: gray;
+	color: white;
+}
+p {
+  color: blue;	
+}
+
+h2 {
+	background-color: yellow;
+}
+
+.resaltado{
+	color: orange;
+}
+
+#especial{
+	color: red;
+}
