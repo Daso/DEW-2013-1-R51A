@@ -7,8 +7,70 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="main">
+	 <header>
+	  <div id="strapline">
+	    <div id="welcome_slogan">
+	      <h3>Bienvenidos a Bookstore <span>Water</span></h3>
+	    </div><!--close welcome_slogan-->
+      </div><!--close strapline-->	  
+	  <nav>
+	    <div id="menubar">
+          <ul id="nav">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="ourwork.html">Usuarios</a></li>
+            <li><a href="testimonials.html">Libros</a></li>
+            <li><a href="projects.html">Autores</a></li>
+            <li><a href="contact.html">Consultas</a></li>
+          </ul>
+        </div><!--close menubar-->	
+      </nav>
+    </header>
+
+
+	<div id="site_content">	
+		<div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>New Website</h2>
+            <p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Update</h2>
+            <h3>March 2013</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3>February 2013</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Contact</h2>
+            <p>Phone: +44 (0)1234 567891</p>
+            <p>Email: <a href="mailto:info@youremail.co.uk">info@youremail.co.uk</a></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+
+      <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="680" height="250" src="/assets/home_1.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+          <li><img width="680" height="250" src="/assets/home_2.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+        </ul> 
+	  </div>
 
 <%= yield %>
+
+
+    </div>
+</div>
+
 
 </body>
 </html>
