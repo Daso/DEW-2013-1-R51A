@@ -1,4 +1,4 @@
-<%= form_for(@tweet, :url => "read_message") do |f| %>
+<%= form_for(@tweet, :url => "update_status") do |f| %>
   <% if @tweet.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
@@ -12,10 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
+   
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  
   </div>
   <div class="actions">
-    <%= f.submit "Último Tweet enviado" %>
+    <%= f.submit "Enviar Tweet" %>
   </div>
 <% end %>
